@@ -19,8 +19,7 @@ const getPostById = (req, res) => {
 const postPost = (req, res) => {
   const postObj = req.body
   postsController.createPost(postObj)
-    .then( data => res.status(201).json(data)
-    )
+    .then( data => res.status(201).json(data) )
     .catch( err => res.status(400).json(err) )
 }
 

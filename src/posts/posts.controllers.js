@@ -15,7 +15,7 @@ const findPostById = async ( id ) => {
 }
 
 const createPost = async ( postObj ) => {
-    const data = Posts.create(postObj)
+    const data = await Posts.create(postObj)
     return data
 }
 
